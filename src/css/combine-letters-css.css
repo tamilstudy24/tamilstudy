@@ -1,0 +1,77 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+}
+
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+}
+
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+
+@media (min-width: 481px) and (max-width: 767px) {
+}
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  /* .compound {
+    height: 100vh;
+    width: 100vw;
+  } */
+}
+
+.list-group > .list-group {
+  display: none;
+  margin-bottom: 0;
+}
+.list-group-item:focus-within + .list-group {
+  display: block;
+}
+
+.list-group > .list-group-item {
+  border-radius: 0;
+  border-width: 1px 0 0 0;
+}
+
+.list-group > .list-group-item:first-child {
+  border-top-width: 0;
+}
+
+.list-group > .list-group > .list-group-item {
+  padding-left: 2.5rem;
+}
+.letters {
+  height: 4em;
+}
+.dd {
+  background-color: rgba(28, 197, 155, 0.158);
+}
+.compound-bg {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+}
+.list-group-item {
+  background-color: rgba(255, 255, 255, 0.74);
+}
+.accordion.accordion-3 {
+  border-radius: 3px;
+}
+.accordion.accordion-3 p {
+  font-size: 1rem;
+}
+.accordion.accordion-3 .fa.fa-angle-down {
+  margin-top: -10px;
+}
+
+.accordion .animated-icon1 span {
+  background: #f44336;
+}

@@ -1,0 +1,44 @@
+body {
+  background-image: url("../img/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Cabin Sketch", cursive;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+/* @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .mobile {
+    color: red;
+  }
+} */
+
+.content-right {
+  background-color: rgba(34, 145, 62, 0.281);
+  margin-left: 0em;
+  color: white;
+}
+
+.card .bc {
+  background-color: rgba(000, 000, 000, 0.3);
+}
+
+.left-div {
+  background-color: rgba(34, 145, 62, 0.226);
+  color: white;
+}
+
+.barathi-img {
+  background-repeat: no-repeat;
+  height: 70%;
+}
+.btn {
+  border-radius: 3em;
+}
+#particles-js {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #3eb87b3b;
+}

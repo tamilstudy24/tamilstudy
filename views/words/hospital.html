@@ -1,0 +1,95 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vocabulary</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/css/mdb.min.css" rel="stylesheet">
+  <!-- JQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/js/mdb.min.js"></script>
+
+  <link rel="stylesheet" href="../../src/css/words-css/style.css">
+  <link rel="stylesheet" href="../../src/css/theme.css">
+  <script src="../../src/js/words-script/hospital-script.js"></script>
+
+</head>
+<style media="screen">
+  .btn {
+    border-radius: 3em;
+  }
+</style>
+
+<body>
+
+  <nav class="navbar align-items-center justify-content-center navbar-expand-lg navbar-dark default-color">
+    <ul class="align-items-center justify-content-center navbar-nav borderu">
+      <li class="nav-item active d-flex text-center">
+        <a class="links mx-4" href="../words.html">
+          <h1><i class="fas fa-angle-left"></i></h1>
+        </a>
+        <a class="links mx-4" href="../../index.html">
+          <h1> <i class="fas fa-home"></i></h1>
+        </a>
+        <span class="links mx-4">
+          <h4>Vocabulary</h4>
+        </span>
+      </li>
+    </ul>
+  </nav>
+
+
+  <div class="container h-75 mt-5 justify-content-center align-items-center d-flex">
+    <div class="row justify-content-center align-items-center ">
+      <div class="card wow fadeInLeft">
+        <div class="view overlay">
+          <img class="card-img-top mx-auto vocabulary-image" src="../../src/img/words-img/hospital/01.jpg"
+            alt="hospital" id="img">
+          <a href="#!">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+        <div class="card-body text-center">
+          <span class="card-title tamil-content " id="tamil">மருந்து</span>
+          <h3 id="pronunciation">Marunthu</h3>
+          <h4 id="english">medicine</h4>
+
+          <audio class="embed-responsive" id="player">
+            <source src="../../src/audio/words-audio/hospital/01.mp3" id="audio">
+          </audio>
+          <button class="btn-floating btn-lg btn-outline-success btn-rounded waves-effect m-1"
+            onclick="document.getElementById('player').play()"><i class="fas fa-volume-up"></i></button>
+        </div>
+        <div class="card-footer text-center">
+          <button type="button" class="btn btn-outline-default waves-effect m-1 hide" onclick="mySlide('prev');"
+            id="back" name="back"><i class="fas fa-angle-double-left"></i> Back</button>
+          <button type="button" class="btn btn-outline-default waves-effect" onclick="mySlide('next');" id="next">
+            Next<i class="fas fa-angle-double-right"></i> </button> </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $(document).ready(function () {
+      new WOW().init();
+    });
+  </script>
+</body>
+
+</html>

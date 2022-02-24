@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ஆடு மேய்க்கும் சிறுவனும் ஓநாயும்</title>
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+	<!-- Bootstrap core CSS -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"
+		rel="stylesheet" />
+	<!-- Material Design Bootstrap -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/css/mdb.min.css" rel="stylesheet" />
+	<!-- JQuery -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<!-- Bootstrap tooltips -->
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+	<!-- Bootstrap core JavaScript -->
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<!-- MDB core JavaScript -->
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/js/mdb.min.js"></script>
+	<link rel="stylesheet" href="../../src/css/theme.css">
+	<link rel="stylesheet" href="../../src/css/quiz.css">
+</head>
+
+<body>
+	<nav class="navbar align-items-center justify-content-center navbar-expand-lg navbar-dark default-color">
+		<ul class="align-items-center justify-content-center navbar-nav borderu">
+			<li class="nav-item active d-flex text-center">
+				<a class="links mx-4" href="../stories/AO-story.html">
+					<h1><i class="fas fa-angle-left"></i></h1>
+				</a>
+				<a class="links mx-4" href="../../index.html">
+					<h1> <i class="fas fa-home"></i></h1>
+				</a>
+				<span class="links mx-4">
+					<h3>Quiz</h3>
+				</span>
+			</li>
+		</ul>
+	</nav>
+
+	<div class="quiz-container">
+		<div class="question-number">
+			<h3>Question <span class="question-num-value"> </span>of
+				<span class="total-question"> </span></h3>
+			<div class="question">
+
+			</div>
+			<div class="options">
+				<div id="0" class="option1 alll" onclick="check(this)"></div>
+				<div id="1" class="option2" onclick="check(this)"></div>
+				<div id="2" class="option3 hide" onclick="check(this)"> </div>
+				<div id="3" class="option4 hide" onclick="check(this)"></div>
+			</div>
+
+			<div class="button">
+				<!-- <input type="button" value="" class="btn"> -->
+				<button type="button" value="" class="btn btn-outline-dark waves-effect" onclick="next()">Next</button>
+			</div>
+			<div class="answers-tracker" id="answers-tracker">
+
+			</div>
+		</div>
+
+		<div class="quiz-over ">
+			<div class="box">
+				<h1>
+					Good try <br>
+					you got <span class="correct-answers"></span>
+					out of <span class="total-question2"></span>
+					that's <span class="percentage"></span>
+				</h1>
+				<button type="button" class="btn btn-outline-dark waves-effect" onclick="tryAgain()">try again</button>
+			</div>
+		</div>
+
+	</div>
+	<script src="../../src/js/stories-quiz-script/AMSO_Quiz.js" defer></script>
+
+</body>
+
+</html>

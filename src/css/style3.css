@@ -1,0 +1,91 @@
+h1 {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.dd {
+  background-color: rgba(28, 197, 155, 0.158);
+}
+.dd:hover {
+  cursor: pointer;
+}
+.card:hover {
+  cursor: pointer;
+}
+
+.btn {
+  border-radius: 5rem;
+}
+
+.card-body {
+  /* background-color: #e5989b; */
+  font-size: xx-large;
+}
+.card-title {
+  color: #6d6875;
+}
+.content-header {
+  text-align: center;
+  color: #6d6875;
+  margin: 2rem;
+}
+.maincard {
+  height: 5rem;
+}
+.letters {
+  height: 10rem;
+}
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .letters {
+    height: 9rem;
+  }
+  .maincard {
+    height: 4rem;
+  }
+}
+
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .letters {
+    height: 9rem;
+  }
+  .maincard {
+    height: 4rem;
+  }
+}
+
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .letters {
+    height: 7rem;
+  }
+  .maincard {
+    height: 4rem;
+  }
+}
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .letters {
+    height: 10rem;
+  }
+  .maincard {
+    height: 5rem;
+  }
+}
